@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="inbox-stats">
+    <div class="inbox-stat">
+        <span class="inbox-stat__icon" style="background: var(--m-accent-soft); color: var(--m-accent);"><i class="fa-regular fa-envelope" aria-hidden="true"></i></span>
+        <div class="inbox-stat__body">
+            <p class="inbox-stat__label"> News: @ViewData["newCount"]</p>
+            <p class="inbox-stat__value" id="stat-unread">5</p>
+        </div>
+    </div>
+    <div class="inbox-stat">
+        <span class="inbox-stat__icon" style="background: var(--m-warning-soft); color: var(--m-warning);"><i class="fa-solid fa-star" aria-hidden="true"></i></span>
+        <div class="inbox-stat__body">
+            <p class="inbox-stat__label">Messages: @ViewData["categorysCount"]</p>
+            <p class="inbox-stat__value" id="stat-starred">3</p>
+        </div>
+    </div>
+    <div class="inbox-stat">
+        <span class="inbox-stat__icon" style="background: var(--m-c3-soft); color: var(--m-c3);"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
+        <div class="inbox-stat__body">
+            <p class="inbox-stat__label"> Team Count: @ViewData["teamCount"]</p>
+            <p class="inbox-stat__value">3</p>
+        </div>
+    </div>
+    <div class="inbox-stat">
+        <span class="inbox-stat__icon" style="background: var(--m-c2-soft); color: var(--m-c2);"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></span>
+        <div class="inbox-stat__body">
+            <p class="inbox-stat__label">Categories; @ViewData["contactsCount"]</p>
+            <p class="inbox-stat__value">24</p>
+        </div>
+    </div>
+</div>

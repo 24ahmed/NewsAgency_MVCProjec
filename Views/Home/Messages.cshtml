@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<ContactUs>
+<div class="text-center mb-8">
+    <h2>Messages</h2>
+</div>
+<div class="container">
+    <table class="table table-hover table-bordered">
+        <thead class="table-hover">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+        </thead>
+        <tbody class="table-info">
+            @foreach (var item in Model)
+            {
+                <tr class="table-hover">
+                    <th>
+                        @item.Name
+                    </th>
+                    <th>
+                        @item.Email
+                    </th>
+                    <th>
+                        @item.Subject
+                    </th>
+                    <th>
+                        @item.Message
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,95 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<News>
+
+
+<div class="container py-5">
+
+    <center class="section-title mb-6 align-content-center">
+        <h2>News Of @ViewBag.Name</h2>
+    </center>
+
+    @foreach (var item in Model)
+    {
+        <div class="row mb-5 align-items-center">
+
+            <div class="col-lg-6">
+                <img src="~/assets/img/blog/blog-image-1.jpg"
+                     class="img-fluid rounded" width="300" height="300"
+                     alt="">
+            </div>
+            <div class="col-lg-6">
+                <h3>@item.Title</h3>
+                <h5 class="text-muted">
+                    @item.Time
+                </h5>
+                <p>
+                    @item.Topic
+                </p>
+                <center>
+                    <div class="d-flex gap-2 mt-3 center">
+
+                        <a asp-action="Edit" asp-controller="Home"
+                           asp-route-id="@item.Id"
+                           class="btn btn-warning btn-sm">
+                            Edit
+                        </a>
+                        <a asp-action="Details"
+                           asp-route-id="@item.Id" asp-controller="Home"
+                           class="btn btn-info btn-sm text-white">
+                            Details
+                        </a>
+                        <a class="btn btn-danger btn-sm delete-btn" href="/Home/Delete/@item.Id"
+                                >
+                            Delete
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <hr />   
+    }
+</div>
+
+    @* <div class="container py-5">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+           
+            <p>The News</p>
+        </div>
+
+        <div class="row g-4">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h4 class="card-title fw-bold mb-3">
+                                @item.Title
+                            </h4>
+
+                            <p class="card-text text-muted flex-grow-1">
+                                @item.Topic
+                            </p>
+
+                            <div class="d-flex gap-2 mt-3">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+    </div> *@
