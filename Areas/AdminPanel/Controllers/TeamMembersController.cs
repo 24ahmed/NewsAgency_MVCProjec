@@ -11,6 +11,7 @@ using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 namespace News_Project.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
+    
     public class TeamMembersController : Controller
     {
         private readonly ApplicationDbContext _context;

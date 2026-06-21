@@ -16,7 +16,7 @@ namespace News_Project
                options.UseSqlServer(
                    builder.Configuration.GetConnectionString("Data")));
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.Configure<IdentityOptions>(
                options => {
                    options.Password.RequireUppercase = false;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alprofesur\\Desktop\\News_Project\\News_Project.csproj": {}
+    "C:\\Users\\alprofesur\\Desktop\\مشروعات_خلصت\\News_Project\\News_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alprofesur\\Desktop\\News_Project\\News_Project.csproj": {
+    "C:\\Users\\alprofesur\\Desktop\\مشروعات_خلصت\\News_Project\\News_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alprofesur\\Desktop\\News_Project\\News_Project.csproj",
+        "projectUniqueName": "C:\\Users\\alprofesur\\Desktop\\مشروعات_خلصت\\News_Project\\News_Project.csproj",
         "projectName": "News_Project",
-        "projectPath": "C:\\Users\\alprofesur\\Desktop\\News_Project\\News_Project.csproj",
+        "projectPath": "C:\\Users\\alprofesur\\Desktop\\مشروعات_خلصت\\News_Project\\News_Project.csproj",
         "packagesPath": "C:\\Users\\alprofesur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alprofesur\\Desktop\\News_Project\\obj\\",
+        "outputPath": "C:\\Users\\alprofesur\\Desktop\\مشروعات_خلصت\\News_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
